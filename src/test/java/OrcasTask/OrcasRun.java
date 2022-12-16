@@ -9,6 +9,7 @@ import java.time.Duration;
 public class OrcasRun {
     public static void main(String[] args) {
         WebDriver driver = OrcasTask.CreateAccount.createAccount();
-        WebDriver driver1 = OrcasTask.Login.login();
+        driver = OrcasTask.Login.login();
+        driver = OrcasTask.Logout.logout();
     }
 }
